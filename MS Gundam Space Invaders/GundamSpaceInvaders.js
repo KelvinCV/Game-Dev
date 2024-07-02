@@ -805,16 +805,16 @@ function fimDeJogo2(){
 
     c.textAlign = "center";
     c.font = "bolder 24px Courier New";
-    c.fillStyle = "darkblue";
-    c.fillText("Jogador: " + playername,  C_LARGURA/4.5, C_ALTURA/4.5-50);
+    c.fillStyle = "black";
+    c.fillText("Jogador: " + playername,  C_LARGURA/5, C_ALTURA/4.5-50);
     
     c.font = "bolder 24px Courier New";
-    c.fillStyle = "darkblue";
-    c.fillText("Pontuação: " + score,  C_LARGURA/4, C_ALTURA/4-40);
+    c.fillStyle = "black";
+    c.fillText("Pontuação: " + score,  C_LARGURA/5, C_ALTURA/4-40);
 
     c.font = "bolder 24px Courier New";
-    c.fillStyle = "darkblue";
-    c.fillText("Tempo: " + count + " s",  C_LARGURA/3.5, C_ALTURA/3.5-40);
+    c.fillStyle = "black";
+    c.fillText("Tempo: " + count + " s",  C_LARGURA/5, C_ALTURA/3.5-40);
    
     c.textAlign = "center";
     c.font = "italic bolder 24px Courier New";
