@@ -1,70 +1,20 @@
 <!DOCTYPE HTML>
-<html>
-<meta charset="UTF-8">
-<style type="text/css">
- #pontos{
-   position: relative; 
-   margin-left: 0%; 
-   text-align: center;
-   font: bold 20px Courier;
-     
-   display: inline-block;
-   background-color: rgb(81, 255, 0);
-     
-   width: 100px;
-   border-radius: 0px;
-   color:rgb(248, 245, 69);
- }
-
-#vidas{
-  position: relative; 
-  margin-left: 0%; 
-  text-align: center;
-  font: bold 20px Courier;
-    
-  display: inline-block;
-  background-color: rgb(255, 0, 0);
-    
-  width: 50px;
-  border-radius: 0px;
-  color: rgb(0, 47, 255);
-}
-
-  #jogador{
-    position: relative; 
-    margin-left: 0%; 
-    text-align: center;
-    font: bold 20px Courier;
-      
-    display: inline-block;
-    background-color: rgb(0, 47, 255);
-      
-    width: 100px;
-    border-radius: 0px;
-    color:  rgb(255, 255, 255);
-  }
-
-  #tempo{
-  position: relative; 
-  margin-left: 0%; 
-  text-align: center;
-  font: bold 20px Courier;
-    
-  display: inline-block;
-  background-color: rgb(5, 5, 5);
-    
-  width: 50px;
-  border-radius: 0px;
-  color: rgb(255, 255, 255);
-  }
-  </style>
-<body >
-<canvas id="tela" width="1350" height="580"></canvas>
-<audio src = "sounds/bgm.mp3" id= "bgm"></audio> 
-<div id="pontos" ></div>
-<div id="vidas" ></div>
-<div id="tempo" ></div>
-<div id="jogador" ></div>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Suit Gundam: Space Invaders</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="tela" width="1350" height="580"></canvas>
+    <audio src="sounds/bgm.mp3" id="bgm"></audio> 
+    <div id="game-info">
+        <div id="pontos"></div>
+        <div id="vidas"></div>
+        <div id="tempo"></div>
+        <div id="jogador"></div>
+    </div>
+    <script src="GundamSpaceInvaders.js"></script>
 </body>
-<script src="GundamSpaceInvaders.js"></script>
 </html>
