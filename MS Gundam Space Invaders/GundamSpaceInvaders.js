@@ -157,7 +157,7 @@ function iniciar() {
     var str = new String("| VIDAS | ");
     document.write(str.fontcolor('red'));
     var str = new String("| TEMPO | ");
-    document.write(str.fontcolor('black'));
+    document.write(str.fontcolor('white'));
 
     jogador.innerText=playername;
 
