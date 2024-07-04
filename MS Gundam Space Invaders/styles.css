@@ -33,31 +33,43 @@ canvas {
 
 #pontos, #vidas, #jogador, #tempo {
   margin: 0 5px; 
-  font: bold 20px Courier;
+  font: bold 25px Courier;
   display: inline-block;
   border-radius: 0px;
 }
 
 #pontos {
-  background-color: rgb(60, 173, 7);
+  background-color:#4CAF50;
   width: 100px;
   color: rgb(207, 205, 55);
 }
 
 #vidas {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(204, 56, 56);
   width: 50px;
   color: rgb(255, 255, 255);
 }
 
 #jogador {
-  background-color: rgb(0, 47, 255);
+  background-color: rgb(39, 67, 192);
   width: 100px;
   color: rgb(255, 255, 255);
 }
 
 #tempo {
-  background-color: rgb(5, 5, 5);
+  background-color: rgb(39, 38, 38);
   width: 50px;
   color: rgb(255, 255, 255);
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
