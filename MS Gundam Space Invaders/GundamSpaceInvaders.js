@@ -152,13 +152,7 @@ function iniciar() {
     startTime();
     startScore();
     startLives();
-    var str = new String(" | PONTOS |");
-    document.write(str.fontcolor('green'));
-    var str = new String("| VIDAS | ");
-    document.write(str.fontcolor('red'));
-    var str = new String("| TEMPO | ");
-    document.write(str.fontcolor('white'));
-
+    
     jogador.innerText=playername;
 
     posicionarzaku0();
@@ -189,12 +183,15 @@ function iniciar() {
     setInterval("zaku5Atingido()", 6); 
     
    
-
     desistir();
     kelvin();
 
     
 
+}
+
+function credits() {
+    alert("https://github.com/KelvinCV/Gundam-Space-Invaders");
 }
 
 function posicionarzaku0() {
