@@ -152,7 +152,6 @@ function iniciar() {
     startTime();
     startScore();
     startLives();
-    
     jogador.innerText=playername;
 
     posicionarzaku0();
@@ -729,15 +728,15 @@ function fimDeJogo(){
     c.drawImage(flag,  525, 25 );
 
     c.textAlign = "center";
-    c.font = "bolder 24px Courier New";
+    c.font = "bolder 24px sans-serif";
     c.fillStyle = "yellow";
     c.fillText("Jogador: " + playername,  C_LARGURA/4.5, C_ALTURA/4.5-50);
 
-    c.font = "bolder 24px Courier New";
+    c.font = "bolder 24px sans-serif";
     c.fillStyle = "yellow";
     c.fillText("Pontuação: " + score,  C_LARGURA/4, C_ALTURA/4-40);
 
-    c.font = "bolder 24px Courier New";
+    c.font = "bolder 24px sans-serif";
     c.fillStyle = "yellow";
     c.fillText("Tempo: " + count + " s",  C_LARGURA/3.5, C_ALTURA/3.5-40);
 
@@ -751,6 +750,11 @@ function fimDeJogo(){
     c.fillStyle = "yellow";
     c.fillText("Gλme Over ", C_LARGURA/2+20, C_ALTURA/2+20)
     c.textAlign = "center";
+
+    c.shadowColor = "black";
+    c.shadowBlur = 5;
+    c.shadowOffsetX = 2;
+    c.shadowOffsetY = 2;
    
     sadMusic.play();
     onkeydown = null;
@@ -801,17 +805,17 @@ function fimDeJogo2(){
     c.drawImage(flag2,  515, 10 );
 
     c.textAlign = "center";
-    c.font = "bolder 24px Courier New";
-    c.fillStyle = "black";
+    c.font = "bolder 24px sans-serif";
+    c.fillStyle = "yellow";
     c.fillText("Jogador: " + playername,  C_LARGURA/5, C_ALTURA/4.5-50);
     
-    c.font = "bolder 24px Courier New";
-    c.fillStyle = "black";
-    c.fillText("Pontuação: " + score,  C_LARGURA/5, C_ALTURA/4-40);
+    c.font = "bolder 24px sans-serif";
+    c.fillStyle = "yellow";
+    c.fillText("Pontuação: " + score,  C_LARGURA/4.5, C_ALTURA/4-40);
 
-    c.font = "bolder 24px Courier New";
-    c.fillStyle = "black";
-    c.fillText("Tempo: " + count + " s",  C_LARGURA/5, C_ALTURA/3.5-40);
+    c.font = "bolder 24px sans-serif";
+    c.fillStyle = "yellow";
+    c.fillText("Tempo: " + count + " s",  C_LARGURA/4.5, C_ALTURA/3.5-40);
    
     c.textAlign = "center";
     c.font = "italic bolder 24px Courier New";
@@ -822,6 +826,11 @@ function fimDeJogo2(){
     c.font = "bolder 50px Courier New";
     c.fillStyle = "yellow";
     c.fillText("Pλrabéns! ", C_LARGURA/2 +20, C_ALTURA/2+20)
+
+    c.shadowColor = "black";
+    c.shadowBlur = 5;
+    c.shadowOffsetX = 2;
+    c.shadowOffsetY = 2;
 
     victoryTheme.play();
     onkeydown = null;
